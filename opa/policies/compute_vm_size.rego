@@ -23,7 +23,7 @@ resources := [resource_changes |
 
 violations := [resource |
 	resource := resources[_]
-	not resource.change.after.size in types
+	not resource.change.after.instance_type in types
 ]
 
 violators[address] {
