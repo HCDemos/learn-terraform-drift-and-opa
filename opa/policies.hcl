@@ -9,8 +9,9 @@ policy "public_ingress" {
 }
 
 policy "compute-001-aws-vm-size" {
-  query = "data.terraform.policies.compute-001-aws-vm-size.deny"
+  query = "data.terraform.policies.aws.compute_001.rule"
   enforcement_level = "mandatory"
+  description = "Enforce preferred VM size"
 }
 
 
