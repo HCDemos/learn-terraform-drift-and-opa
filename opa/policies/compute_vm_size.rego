@@ -16,7 +16,7 @@ types := [
 
 resources := [resource_changes |
 	resource_changes := tfplan.resource_changes[_]
-	resource_changes.type == "aws_instance"
+	resource_changes.instance_type == "aws_instance"
 	resource_changes.mode == "managed"
 	resource_changes.change.actions in actions
 ]
