@@ -1,4 +1,4 @@
-package terraform.policies.aws.compute_001
+package terraform.policies.compute-001-aws-vm-size
 
 import future.keywords.in
 import input.plan as tfplan
