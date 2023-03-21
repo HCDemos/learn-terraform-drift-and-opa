@@ -1,5 +1,5 @@
-policy "compute-001-vm-size" {
-  query = "data.terraform.policies.aws.compute_001.rule"
+policy "compute_vm_size" {
+  query = "data.terraform.policies.compute_vm_size.rule"
   enforcement_level = "mandatory"
   description = "Enforce preferred VM size"
 }
